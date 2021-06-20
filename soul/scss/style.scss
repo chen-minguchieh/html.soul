@@ -1,0 +1,730 @@
+/*
+	Soul by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+/**** disabling Isotope CSS3 transitions ****/
+
+body 
+	font-family: 'Source Sans Pro', sans-serif 
+	color: black 
+p 
+	font-size: 0.938em 
+	color: #898989 
+	font-style: italic 
+	line-height: 19px 
+	margin: 0 0 20px 0 
+.title 
+	width: 100% 
+	display: block 
+	text-align: center 
+	padding: 0 0 38px 0 
+	* 
+		display: inline-block 
+		width: 100% 
+	h1 
+		margin: 0 
+		font-size: 1.438em 
+	span 
+		color: #c0bebe 
+		font-size: 1.438em 
+		font-weight: bold 
+		padding: 0 0 11px 0 
+	p 
+		text-transform: uppercase 
+		color: black 
+		line-height: 20px 
+		font-size: 0.938em 
+		word-spacing: 3px 
+		margin: 0 
+		font-style: normal 
+.smallTitle 
+	width: 100% 
+	display: block 
+	padding: 0 0 20px 0 
+	h2 
+		margin: 0 
+		font-size: 1.063em 
+	span 
+		color: #c0bebe 
+		font-size: 1.438em 
+		font-weight: bold 
+		padding: 0 0 11px 0 
+.cta 
+	color: black 
+	font-size: 0.938em 
+	text-decoration: none 
+	padding: 10px 40px 
+	border: 3px solid #d8d6d6 
+	text-transform: uppercase 
+	display: inline-block 
+	-webkit-transition: all ease-in 
+	-webkit-transition-delay: 0.3s 
+	-moz-transition: all ease-in 0.3s 
+	-o-transition: all ease-in 0.3s 
+	transition: all ease-in 0.3s 
+	&:hover 
+		background: black 
+		border: 3px solid black 
+		color: #fff 
+ul 
+	&.social 
+		display: block 
+		li 
+			display: inline-block 
+			margin: 0 40px 0 0 
+			a 
+				text-decoration: none 
+				color: #959494 
+				text-transform: uppercase 
+				font-size: 0.813em 
+				-webkit-transition: all ease-in 
+				-webkit-transition-delay: 0.3s 
+				-moz-transition: all ease-in 0.3s 
+				-o-transition: all ease-in 0.3s 
+				transition: all ease-in 0.3s 
+				i 
+					font-size: 1.308em 
+				&:hover 
+					color: #000 
+.backtotop 
+	position: fixed 
+	right: -40px 
+	bottom: 40px 
+	background: #000 
+	width: 40px 
+	height: 40px 
+	z-index: 100 
+	text-align: center 
+	line-height: 40px 
+	i 
+		color: #fff 
+		font-size: 1.5em 
+		text-align: center 
+.isotope,
+.isotope .isotope-item 
+	-webkit-transition-duration: 0.8s 
+	-moz-transition-duration: 0.8s 
+	-ms-transition-duration: 0.8s 
+	-o-transition-duration: 0.8s 
+	transition-duration: 0.8s 
+.isotope 
+	-webkit-transition-property: height, width 
+	-moz-transition-property: height, width 
+	-ms-transition-property: height, width 
+	-o-transition-property: height, width 
+	transition-property: height, width 
+	.isotope-item 
+		-webkit-transition-property: -webkit-transform, opacity 
+		-moz-transition-property: -moz-transform, opacity 
+		-ms-transition-property: -ms-transform, opacity 
+		-o-transition-property: -o-transform, opacity 
+		transition-property: transform, opacity 
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition 
+	-webkit-transition-duration: 0s 
+	-moz-transition-duration: 0s 
+	-ms-transition-duration: 0s 
+	-o-transition-duration: 0s 
+	transition-duration: 0s 
+.pace 
+	width: 100% 
+	height: 100% 
+	background: #fff 
+	position: fixed 
+	z-index: 10000 
+	-webkit-transition: all ease-in 
+	-webkit-transition-delay: 0.4s 
+	-moz-transition: all ease-in 0.4s 
+	-o-transition: all ease-in 0.4s 
+	transition: all ease-in 0.4s 
+	color: #000 
+	&.pace-inactive 
+		display: none 
+	.pace-progress 
+		color: #000 
+		&:after 
+			display: block 
+			position: absolute 
+			top: 50% 
+			left: 50% 
+			content: attr(data-progress-text) 
+			font-weight: 800 
+			font-size: 3em 
+			line-height: 1 
+			letter-spacing: -1px 
+			text-align: right 
+			color: #000 
+			margin: -24px 0 0 -55.5px 
+header 
+	width: 100% 
+	display: block 
+	padding: 30px 0 0 0 
+	position: fixed 
+	left: 0 
+	top: 0 
+	z-index: 100 
+	background: rgba(255, 255, 255, 0.9) 
+	-webkit-transition: all ease-in 
+	-webkit-transition-delay: 0.2s 
+	-moz-transition: all ease-in 0.2s 
+	-o-transition: all ease-in 0.2s 
+	transition: all ease-in 0.2s 
+	* 
+		-webkit-transition: all ease-in 
+		-webkit-transition-delay: 0.2s 
+		-moz-transition: all ease-in 0.2s 
+		-o-transition: all ease-in 0.2s 
+		transition: all ease-in 0.2s 
+	&.sticky 
+		padding: 10px 0 
+		img 
+			width: 37px 
+			width: auto 
+		nav 
+			padding: 11px 0 
+			padding: 24px 0 30px 0 
+		.sep 
+			display: none 
+			display: block 
+	nav 
+		width: 100% 
+		display: block 
+		padding: 24px 0 
+		padding: 24px 0 30px 0 
+		ul 
+			width: 100% 
+			display: block 
+			list-style: none 
+			margin: 0 
+			padding: 0 
+			text-align: right 
+			text-align: center 
+			li 
+				text-transform: uppercase 
+				font-weight: 600 
+				font-size: 0.938em 
+				color: black 
+				display: inline 
+				margin: 0 0 0 8px 
+				a 
+					text-decoration: none 
+					color: black 
+					&:hover 
+						color: #898989 
+				&.current 
+					a 
+						color: #898989 
+	.sep 
+		width: 100% 
+		display: block 
+		height: 1px 
+		background: #e4e2e2 
+		margin: 30px 0 0 0 
+		margin: 0 
+	.logoholder 
+		width: 100% 
+		display: block 
+		text-align: center 
+section 
+	&.about 
+		width: 100% 
+		display: block 
+		padding: 186px 0 80px 0 
+		padding: 40px 0 
+		.imageholder 
+			width: 100% 
+			display: block 
+			position: relative 
+			&:hover 
+				.text 
+					opacity: 1 
+			.text 
+				position: absolute 
+				padding: 20px 
+				height: 100% 
+				width: 100% 
+				left: 0 
+				top: 0 
+				-webkit-transition: all ease-in 
+				-webkit-transition-delay: 0.3s 
+				-moz-transition: all ease-in 0.3s 
+				-o-transition: all ease-in 0.3s 
+				transition: all ease-in 0.3s 
+				opacity: 0 
+				div 
+					height: 100% 
+					width: 100% 
+					display: table 
+					background: rgba(255, 255, 255, 0.7) 
+					text-align: center 
+					span 
+						display: table-cell 
+						vertical-align: middle 
+						text-transform: uppercase 
+						font-weight: 600 
+		.sliderHolder 
+			width: 100% 
+			display: block 
+			position: relative 
+			.slider 
+				width: 100% 
+				display: block 
+			.bannerNav 
+				position: absolute 
+				right: 10px 
+				bottom: 10px 
+				z-index: 100 
+				a 
+					float: left 
+					width: 32px 
+					height: 32px 
+					background: #fff 
+					opacity: 0.7 
+					color: black 
+					text-align: center 
+					font-size: 1.375em 
+					margin: 0 0 0 1px 
+					-webkit-transition: all ease-in 
+					-webkit-transition-delay: 0.3s 
+					-moz-transition: all ease-in 0.3s 
+					-o-transition: all ease-in 0.3s 
+					transition: all ease-in 0.3s 
+					i 
+						line-height: 32px 
+					&:hover 
+						background: #959494 
+						color: #fff 
+						opacity: 1 
+		article 
+			width: 100% 
+			display: block 
+			padding: 60px 0 0 0 
+			text-align: center 
+		.smallTitle 
+			text-align: center 
+	&.parallax 
+		width: 100% 
+		height: 350px 
+		background-position: center center 
+		background-repeat: no-repeat 
+	&.services 
+		width: 100% 
+		display: block 
+		padding: 80px 0 60px 0 
+		padding: 40px 0 
+		.service 
+			width: 100% 
+			display: block 
+			text-align: center 
+			opacity: 0 
+			.top 
+				width: 100% 
+				display: block 
+				border-top: 1px solid #e4e2e2 
+				border-bottom: 1px solid #e4e2e2 
+				padding: 20px 0 18px 0 
+				margin: 0 0 30px 0 
+				i 
+					font-size: 1.875em 
+					padding: 0 0 7px 0 
+				h3 
+					font-size: 0.938em 
+					color: black 
+					margin: 0 
+			p 
+				font-size: 0.875em 
+				padding: 0 15px 
+	&.team 
+		width: 100% 
+		display: block 
+		background: #eeeeee 
+		padding: 40px 0 
+		padding: 40px 0 120px 0 
+		.slider 
+			width: 100% 
+			display: block 
+			position: relative 
+			.sliderholder 
+				width: 100% 
+				display: block 
+				.member 
+					h5 
+						text-transform: uppercase 
+						color: black 
+						line-height: 20px 
+						font-size: 0.938em 
+						word-spacing: 3px 
+						margin: 0 
+						padding: 0 0 20px 0 
+						font-style: normal 
+						font-weight: normal 
+					p 
+						padding: 0 0 30px 0 
+					ul 
+						&.social 
+							text-align: right 
+							text-align: center 
+							margin: 0 
+							li 
+								margin: 0 0 0 40px 
+			.bannerNav 
+				position: absolute 
+				left: 10px 
+				bottom: 10px 
+				z-index: 100 
+				bottom: -65px 
+				left: 50% 
+				margin: 0 0 0 -26px 
+				a 
+					float: left 
+					width: 32px 
+					height: 32px 
+					background: #fff 
+					opacity: 0.7 
+					color: black 
+					text-align: center 
+					font-size: 1.375em 
+					margin: 0 0 0 1px 
+					-webkit-transition: all ease-in 
+					-webkit-transition-delay: 0.3s 
+					-moz-transition: all ease-in 0.3s 
+					-o-transition: all ease-in 0.3s 
+					transition: all ease-in 0.3s 
+					background: #000 
+					opacity: 1.0 
+					width: 25px 
+					height: 25px 
+					i 
+						line-height: 32px 
+						line-height: 25px 
+						color: #fff 
+						font-size: 0.813em 
+					&:hover 
+						background: #959494 
+						color: #fff 
+						opacity: 1 
+			.memberInfo 
+				text-align: center 
+			.smallTitle 
+				text-align: center 
+				margin: 20px 0 0 0 
+	&.works 
+		width: 100% 
+		display: block 
+		margin: 0 0 30px 0 
+		padding: 80px 0 0 0 
+		padding: 40px 0 0 0 
+		.title 
+			padding: 0 0 10px 0 
+		ul 
+			list-style: none 
+			margin: 0 
+			padding: 0 
+			&.filters 
+				text-align: center 
+				padding: 0 0 40px 0 
+				font-style: italic 
+				li 
+					float: none 
+					display: inline-block 
+					width: auto 
+					margin: 0 4px 
+					&.selected 
+						a 
+							font-weight: 800 
+					a 
+						font-size: 0.938em 
+			li 
+				float: left 
+				width: 24.9% 
+				width: 49.9% 
+				a 
+					color: black 
+					font-size: 0.938em 
+					text-decoration: none 
+					&:hover 
+						figure 
+							.imgholder 
+								.hover 
+									opacity: 1 
+								img 
+									-webkit-transform: scale(1.05, 1.05) 
+									-moz-transform: scale(1.05, 1.05) 
+									-ms-transform: scale(1.05, 1.05) 
+									-o-transform: scale(1.05, 1.05) 
+									transform: scale(1.05, 1.05) 
+					figure 
+						width: 100% 
+						display: block 
+						opacity: 0 
+						.imgholder 
+							width: 100% 
+							display: block 
+							position: relative 
+							overflow: hidden 
+							img 
+								position: absolute 
+								z-index: 1 
+								left: 0 
+								top: 0 
+								-webkit-transition: all ease-in 
+								-webkit-transition-delay: 0.3s 
+								-moz-transition: all ease-in 0.3s 
+								-o-transition: all ease-in 0.3s 
+								transition: all ease-in 0.3s 
+							.hover 
+								width: 100% 
+								height: 100% 
+								position: absolute 
+								z-index: 1 
+								left: 0 
+								top: 0 
+								padding: 20px 
+								-webkit-transition: all ease-in 
+								-webkit-transition-delay: 0.3s 
+								-moz-transition: all ease-in 0.3s 
+								-o-transition: all ease-in 0.3s 
+								transition: all ease-in 0.3s 
+								opacity: 0 
+								.text 
+									width: 100% 
+									height: 100% 
+									background: rgba(255, 255, 255, 0.7) 
+									display: table 
+									text-transform: uppercase 
+									div 
+										width: 100% 
+										text-align: center 
+										display: table-cell 
+										vertical-align: middle 
+										padding: 0 20px 
+										h4 
+											margin: 0 0 10px 0 
+											font-size: 1.063em 
+										ul 
+											list-style: none 
+											margin: 0 
+											padding: 0 
+											width: 100% 
+											display: block 
+											text-align: center 
+											li 
+												display: inline-block 
+												width: auto 
+												float: none 
+												padding: 0 1px 
+						figcaption 
+							width: 100% 
+							display: block 
+							padding: 30px 20px 
+							-moz-box-sizing: border-box 
+							-webkit-box-sizing: border-box 
+							box-sizing: border-box 
+							max-height: 90px 
+							min-height: 90px 
+							span 
+								color: #898989 
+				img 
+					width: 100% 
+				figcaption 
+					min-height: 100% !important 
+					max-height: 100% !important 
+		article 
+			&.work 
+				width: 100% 
+				display: none 
+				padding: 20px 0 
+				.smallTitle 
+					text-align: center 
+					padding: 20px 0 
+				p 
+					text-align: center 
+		a 
+			&.close 
+				width: 100% 
+				text-align: center 
+				display: none 
+				padding: 0 0 40px 0 
+				i 
+					font-size: 1.2em 
+					color: #000 
+	&.testimonials 
+		width: 100% 
+		display: block 
+		padding: 40px 
+		background: #eeeeee 
+		.title 
+			padding: 0 0 20px 0 
+		.slideholder 
+			display: inline-block 
+			width: 100% 
+		.holder 
+			display: block 
+			width: 100% 
+			article 
+				display: block 
+				height: 208px 
+				text-align: center 
+				span 
+					&.circle 
+						display: inline-block 
+						width: 111px 
+						height: 111px 
+						-webkit-border-radius: 100% 
+						-moz-border-radius: 100% 
+						-ms-border-radius: 100% 
+						-o-border-radius: 100% 
+						border-radius: 100% 
+						overflow: hidden 
+						margin: 0 0 20px 0 
+				p 
+					text-transform: uppercase 
+					color: black 
+					line-height: 20px 
+					font-size: 0.938em 
+					word-spacing: 3px 
+					margin: 0 0 20px 0 
+					font-style: normal 
+				h5 
+					color: black 
+					text-transform: uppercase 
+					color: black 
+					font-size: 0.938em 
+					margin: 0 
+					font-weight: 600 
+		.bannerNav 
+			width: 100% 
+			display: block 
+			text-align: center 
+			margin: 20px 0 0 0 
+			a 
+				width: 25px 
+				height: 25px 
+				background: #000 
+				color: black 
+				text-align: center 
+				font-size: 1.375em 
+				-webkit-transition: all ease-in 
+				-webkit-transition-delay: 0.3s 
+				-moz-transition: all ease-in 0.3s 
+				-o-transition: all ease-in 0.3s 
+				transition: all ease-in 0.3s 
+				display: inline-block 
+				i 
+					line-height: 25px 
+					color: #fff 
+					font-size: 0.813em 
+				&:hover 
+					background: #959494 
+					color: #fff 
+					opacity: 1 
+	&.contact 
+		width: 100% 
+		display: block 
+		padding: 80px 0 
+		padding: 40px 0 0 0 
+		.map 
+			-webkit-filter: grayscale(100%) 
+			-moz-filter: grayscale(100%) 
+			-ms-filter: grayscale(100%) 
+			-o-filter: grayscale(100%) 
+			filter: grayscale(100%) 
+			margin: 0 0 30px 0 
+			position: relative 
+			padding-bottom: 30.25% 
+			padding-top: 30px 
+			height: 0 
+			overflow: hidden 
+		input[type="text"] 
+			background: #eeeeee 
+			width: 100% 
+			padding: 15px 20px 
+			border: 0 none 
+			outline: 0 
+			text-transform: uppercase 
+			font-size: 0.813em 
+			color: #959494 
+			margin: 0 0 20px 0 
+			text-align: center 
+		input[type="text"]:focus 
+			background: #000 
+			color: #fff 
+		textarea 
+			background: #eeeeee 
+			width: 100% 
+			padding: 15px 20px 
+			border: 0 none 
+			outline: 0 
+			text-transform: uppercase 
+			font-size: 0.813em 
+			color: #959494 
+			height: 160px 
+			margin: 0 0 20px 0 
+			text-align: center 
+			&:focus 
+				background: #000 
+				color: #fff 
+		input[type="submit"] 
+			background: #fff 
+		input[type="submit"]:hover 
+			background: #000 
+		ul 
+			font-size: 0.813em 
+			line-height: 17px 
+			text-transform: uppercase 
+			text-align: center 
+			margin: 0 
+			li 
+				margin: 0 0 20px 0 
+				padding: 0 0 0 10px 
+				a 
+					color: #000 
+					text-decoration: none 
+				i 
+					font-size: 1.308em 
+					display: none 
+		form 
+			margin: 0 0 40px 0 
+			display: inline-block 
+			text-align: center 
+		.smallTitle 
+			text-align: center 
+section.contact .map iframe, section.contact .map embed 
+	position: absolute 
+	top: 0 
+	left: 0 
+	width: 100% 
+	height: 100% 
+footer 
+	width: 100% 
+	display: block 
+	background: #eeeeee 
+	padding: 10px 0 
+	.copyright 
+		width: 100% 
+		display: block 
+		text-align: right 
+		color: #959494 
+		text-transform: uppercase 
+		font-size: 0.813em 
+		padding: 20px 0 0 0 
+		text-align: center 
+	ul 
+		&.social 
+			text-align: center 
+@media 
+	only 
+		screen 
+			and 
+				(max-width 
+					&: 
+						1024px) 
+							header {
+  position: relative;
+}
+@media only screen and (max-width 
+						&: 450px) section.works ul li {
+  width: 100%;
+}
